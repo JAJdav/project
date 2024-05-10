@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my account page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="myaccount.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+  <body>
+    <div class="herop">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="images/user.webp" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.webp">
+              <h3>Abdullah</h3>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/profile.png">
+              <p>Edit profile</p>
+              <span>></span>
+            </a>
+
+              <a href="#" class="sub-menu-link">
+                <img src="images/logout.png">
+                <p>Log out</p>
+                <span>></span>
+              </a>
+
+          </div>
+        </div>
+      </nav>
+      <div class="card">
+        <div class="card-body">
+        <div class="rightbox">
+        <div class="profile tabShow">
+          <h1>Personal info</h1>
+          <h2>Full name</h2>
+          <input type="text" class="input" value="Jane Doe">
+          <h2>Birthday</h2>
+          <input type="text" class="input" value="April 20,1998">
+          <h2>Gender</h2>
+          <input type="text" class="input" value="Male">
+          <h2>Email</h2>
+          <input type="text" class="input" value="example@gmail.com">
+          <h2>Password</h2>
+          <input type="password" class="input" value="12345678">
+        </div>
+        <button class="btn" id="myBtn">Update</button>
+      </div>
+    </div>
+    
+<script>
+  let subMenu= document.getElementById("subMenu");
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+  document.getElementById("myBtn").addEventListener("click", display);
+
+function display() {
+  Swal.fire({
+  title: "Do you want to save the changes?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Save",
+  denyButtonText: `Don't save`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire("Saved!", "", "success");
+  } else if (result.isDenied) {
+    Swal.fire("Changes are not saved", "", "info");
+  }
+});
+}
+
+
+</script>
+</body>
+</html>

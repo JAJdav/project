@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booksCSS.css">
+    <title>Bookie - Books</title>
+</head>
+<body>
+    <div class="herop">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+            
+                <li><a href="home.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="ShoppingCart.html"><img src="images/shopping-cart2.png" alt="" class="carts"></a>
+                
+            <img src="images/user.webp" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.webp">
+              <h3>Abdullah</h3>
+            </div>
+            <hr>
+
+            <a href="myaccount.html" class="sub-menu-link">
+              <img src="images/profile.png">
+              <p>Edit profile</p>
+              <span>></span>
+            </a>
+
+              <a href="login.html" class="sub-menu-link">
+                <img src="images/logout.png">
+                <p>Log out</p>
+                <span>></span>
+              </a>
+
+          </div>
+        </div>
+      </nav>
+
+    <section class="books">
+        <div class="container" id="bookContainer">
+            <h2>Featured Books</h2>
+            <div class="book-container">
+
+
+                <!-- Book 1 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 1">
+                    <div class="book-details">
+                        <h3>How To Communicate</h3>
+                        <p>Author: Mohammed </p>
+                        <p>$80</p>
+                        <p> The book talks about the art of communication</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+
+                <!-- Book 2-->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 2">
+                    <div class="book-details">
+                        <h3>Souls of the Blessed</h3>
+                        <p>Author: Saud</p>
+                        <p>$60</p>
+                        <p> This novel tells a story of a fictional characters with their strange ways of manipulating souls </p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+ 
+
+                <!-- Book 3 -->
+                <div class="book">
+                   <img src="images/book4.jpg" alt="Book 3">
+                    <div class="book-details">
+                        <h3>How to Invent Everything</h3>
+                        <p>Author: Hussain</p>
+                        <p>$40</p>
+                        <p>The book talks about the art of thinking outside the books to invent vast variety of things</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+   
+
+                <!-- Book 4 -->
+                <div class="book">
+                   <img src="images/book4.jpg" alt="Book 4">
+                    <div class="book-details">
+                        <h3>Oil Change for kids</h3>
+                        <p>Author: Chris</p>
+                        <p>$14.99</p>
+                        <p> a child novel teaching kids how to change an oil for a car</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 5">
+                    <div class="book-details">
+                        <h3>Master Cheif</h3>
+                        <p>Author: Ali</p>
+                        <p>$90</p>
+                        <p> Book has a lot of good recipes to offer</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="book">
+                   <img src="images/book4.jpg" alt="Book 6">
+                    <div class="book-details">
+                        <h3>Custom Keyboards</h3>
+                        <p>Author: Mahmood</p>
+                        <p>$50</p>
+                        <p>A book in which it teaches you all about custom built keyboards</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+                <!-- Book 7 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 7">
+                    <div class="book-details">
+                        <h3>C++ Basics</h3>
+                        <p>Author: Hazel</p>
+                        <p>$70</p>
+                        <p>Book that teaches programmers from a rookie level to a pro level</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+                <!-- Book 8 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 8">
+                    <div class="book-details">
+                        <h3>Rich Dad Poor Dad</h3>
+                        <p>Author: Saleh</p>
+                        <p>$9</p>
+                        <p> this book talks about all that is involved in financial success </p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+
+                <!-- Book 9 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 9">
+                    <div class="book-details">
+                        <h3>The Last</h3>
+                        <p>Author : Hammed</p>
+                        <p>$100</p>
+                        <p> A fictional creature said to be named bezo that aims to be the last of his tribe</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+                    <!-- Book 10 -->
+                <div class="book">
+                    <img src="images/book4.jpg" alt="Book 10">
+                    <div class="book-details">
+                        <h3>The Last</h3>
+                        <p>Author : Hammed</p>
+                        <p>$10</p>
+                        <p> A fictional creature said to be named bezo that aims to be the last of his tribe</p>
+                        <a href="ProductPage.html"><button class="btn">View Book</button></a>
+                    </div>
+                </div>
+                   
+                    
+            </div>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="page active" href="#">1</a>
+        <a  href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+    <footer>
+        <p>&copy; 2024 Bookie. All rights reserved.</p>
+    </footer>
+
+
+    <button id="up" class="up"><div class="triangle_up1"></div> </button>
+   
+    <script>
+        let subMenu= document.getElementById("subMenu");
+        function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+        }
+        let btn=document.getElementById("up");
+window.onscroll=()=>{
+    if(window.scrollY>=300){
+        btn.style.display="block";
+    }
+    else{
+        btn.style.display="none";
+    }
+}
+btn.addEventListener("click",function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+        })
+})
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var paginationLinks = document.querySelectorAll('.pagination .page');
+    var bookContainer = document.getElementById('bookContainer');
+
+    // Function to show books for the specified page
+    function showBooks(pageNumber) {
+        var booksPerPage = 9; // Change this value to adjust the number of books per page
+        var startIndex = (pageNumber - 1) * booksPerPage;
+        var endIndex = startIndex + booksPerPage;
+
+        var allBooks = bookContainer.querySelectorAll('.book');
+        allBooks.forEach(function(book, index) {
+            if (index >= startIndex && index < endIndex) {
+                book.style.display = 'block';
+            } else {
+                book.style.display = 'none';
+            }
+        });
+    }
+
+    // Function to handle pagination link click
+    function handlePaginationClick(event) {
+        event.preventDefault();
+        var clickedLink = event.target;
+        var pageNumber = parseInt(clickedLink.textContent);
+        // give number of page (content of a)
+        console.log(pageNumber)
+        // it take tag 
+        console.log(clickedLink)
+        // Update active class for pagination links
+        paginationLinks.forEach(function(link) {
+            link.classList.remove('active');
+        });
+        clickedLink.classList.add('active');
+
+        // Show books for the clicked page
+        showBooks(pageNumber);
+
+        // Store current page in local storage
+        localStorage.setItem('currentPage', pageNumber);
+    }
+
+    paginationLinks.forEach(function(link) {
+        link.addEventListener('click', handlePaginationClick);
+    });
+
+    // Retrieve current page from local storage on page load
+    var currentPage = localStorage.getItem('currentPage');
+    if (currentPage) {
+        // Show books for the stored page
+        showBooks(parseInt(currentPage));
+
+        // Set active class for the pagination link of the stored page
+        paginationLinks.forEach(function(link) {
+            if (parseInt(link.textContent) === parseInt(currentPage)) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+});
+
+
+
+
+      </script>
+</body>
+</html>

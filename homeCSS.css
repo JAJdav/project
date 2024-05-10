@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    /* background-color:#ffff; */
+  }
+
+  .carts{
+    width:20px;
+    margin-right:10px;
+    
+  }
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.herop {
+    width: 100%;
+    min-height: 100vh;
+  
+    color: #525252;
+    /* position:; */
+
+  }
+  nav{
+    background:#1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  .herop {
+    width: 100%;
+    min-height: 100vh;
+ 
+    color: #525252;
+  }
+  nav{
+    background:#1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-pic {
+    width: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .sub-menu-wrap.open-menu{
+    max-height: 400px;
+  }
+  .sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+  }
+  .user-info{
+    display: flex;
+    align-items: center;
+  }
+  .user-info h3{
+    font-weight: 500;
+  }
+  .user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+  }
+  
+  .sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+  }
+  .sub-menu-link p{
+    width: 100%;
+  }
+  .sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 15px;
+  }
+  .sub-menu-link span{
+    font-size: 22px;
+    transition: 0.5s;
+  }
+  .sub-menu-link:hover span{
+    transform: translateX(5px);
+  }
+  .sub-menu-link:hover p{
+    font-weight: 600; 
+  }
+
+
+
+
+
+
+  .logo{
+    width: 120px;
+  }
+  nav ul{
+    width: 100%;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    /* padding: 100px 0; */
+    padding-top:70px;
+    background-color: #f4f4f4;
+ 
+
+}
+.title-content{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  padding-bottom:20px;
+}
+.title-content img{
+  max-width:650px;
+
+  margin-left:10%;
+
+}
+.title-content .text-contet{
+
+  padding-top:10%;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero p{
+  margin-bottom:20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.featured-books {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.featured-books h2 {
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.book {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin:0;
+    padding: 20px 0;
+    position:initial;
+    width: 100%;
+    
+}
+
+.book img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.hero span a{
+  background-color:#1a1a1a;
+  color:#FFFF;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size: 0.6em;
+  letter-spacing:0.1em;
+  font-weight:400;
+  padding:10px 30px;
+}
+
+.hero span a:hover{
+  letter-spacing:0.15em;
+  background-color:#272626;
+  box-shadow:0 0 35px #272626;
+}
+
+
+
+
+
+
+
+
+
+
+
+.featured_boks{
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+ 
+}
+
+.featured_boks h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.featured_boks .featured_book_box{
+  width: 95%;
+  height: 60vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+  width: 250px;
+  height: 420px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #919191;
+  margin: auto 20px;
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+  box-shadow: 0 0 5px #089da1;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+  width: 150px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag h2{
+  margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+  color: #919191;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+  color: #089da1;
+  margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+  margin-top: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+  font-weight: 100;
+  padding: 0 5px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .f_btn{
+  padding: 8px 20px;
+  border: 2px solid #089da1;
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+/*arrivals*/
+
+.arrivals{
+  width: 100%;
+  margin-bottom:0;
+
+  padding-bottom:50px;
+}
+
+.arrivals h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.arrivals .arrivals_box{
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 25px;
+  
+}
+
+.arrivals .arrivals_box .arrivals_card{
+  width: 250px;
+  height: 340px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #919191;
+  margin: auto 20px;
+  margin-right:40%;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+  box-shadow: 0 0 5px #089da1;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+  width: 150px;
+  height: 220px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+  transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+  font-family: queen of camelot;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+  color: #089da1;
+  margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+  padding: 8px 20px;
+  border: 2px solid #089da1;
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .title-content {
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .title-content img {
+      margin-bottom: 10px;
+  }
+
+  .title-content h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+  }
+
+  .title-content p {
+      font-size: 14px;
+      margin-bottom: 16px;
+  }
+
+  .title-content span a {
+      font-size: 12px;
+      padding: 8px 16px;
+  }
+
+  .arrivals_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .title-content img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .title-content .text-contet {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero span a {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .arrivals_box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactCSS.css">
+    <title>Contact Us - Bookie</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+</head>
+<body>
+    <div class="herop">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="ShoppingCart.html"><img src="images/shopping-cart2.png" alt="" class="carts"></a>
+            
+            <img src="images/user.webp" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.webp">
+              <h3>Abdullah</h3>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/profile.png">
+              <p>Edit profile</p>
+              <span>></span>
+            </a>
+
+              <a href="#" class="sub-menu-link">
+                <img src="images/logout.png">
+                <p>Log out</p>
+                <span>></span>
+              </a>
+
+          </div>
+        </div>
+      </nav>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit" id="myBtn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bookie. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let subMenu= document.getElementById("subMenu");
+        function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+        }
+
+        document.getElementById("myBtn").addEventListener("click", display);
+
+        function display(event) {
+          event.preventDefault(); 
+          Swal.fire("message successful been send", "", "success");
+          document.getElementById("email").value="";
+          document.getElementById("message").value="";
+          document.getElementById("name").value="";
+          // wsdefr@sdf.com
+        
+        }
+      </script>
+</body>
+</html>

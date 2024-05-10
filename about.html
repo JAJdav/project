@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutCSS.css">
+    <title>About Us - Bookie </title>
+</head>
+<body>
+    <div class="herop">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="ShoppingCart.html"><img src="images/shopping-cart2.png" alt="" class="carts"></a>
+            <img src="images/user.webp" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.webp">
+              <h3>Abdullah</h3>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/profile.png">
+              <p>Edit profile</p>
+              <span>></span>
+            </a>
+
+              <a href="#" class="sub-menu-link">
+                <img src="images/logout.png">
+                <p>Log out</p>
+                <span>></span>
+              </a>
+
+          </div>
+        </div>
+      </nav>
+        <div class="card">
+            <h2>About Us</h2>
+            <p>Welcome to Bookie, your number one source for all things books. We're dedicated to providing you the very best of literature, with an emphasis on quality, diversity, and affordability.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+            <p>Sincerely,<br>Bookie Team</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.9500892718147!2d50.195162224677844!3d26.3928000769608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49ef85c961edaf%3A0x7b2db98f2941c78c!2z2KzYp9mF2LnYqSDYp9mE2KXZhdin2YUg2LnYqNiv2KfZhNix2K3ZhdmGINio2YYg2YHZiti12YQ!5e0!3m2!1sar!2ssa!4v1715167570841!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bookie. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let subMenu= document.getElementById("subMenu");
+        function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+        }
+      </script>
+</body>
+</html>
